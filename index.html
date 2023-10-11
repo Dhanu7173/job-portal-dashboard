@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Job Portal</title>
+    <link rel="icon" type="image/x-icon" href="/public/majesticonssuitcase2.svg">
+    <link rel="stylesheet" href="./global.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;500;700&display=swap"
+    />
+  </head>
+  <body>
+    <div
+      class="relative rounded-2xl bg-ghostwhite w-full h-screen overflow-hidden text-left text-xl text-gray font-dm-sans"
+    >
+      <div
+        class="absolute top-[0px] left-[0px] bg-white w-[1850px] overflow-hidden flex flex-row items-center justify-between py-5 px-14 box-border text-base"
+      >
+        <div
+          class="flex flex-row items-center justify-start gap-[7.25px] z-[0] text-[32.63px]"
+        >
+          <img
+            class="relative w-[48.59px] h-[48.59px] overflow-hidden shrink-0"
+            alt=""
+            src="/public/majesticonssuitcase2.svg"
+          />
+
+          <b
+            class="relative tracking-[-0.06em] inline-block w-[95.16px] h-[38.97px] shrink-0"
+            >Jobee</b
+          >
+        </div>
+        <div
+          class="flex flex-row items-start justify-start gap-[32px] z-[1] text-steelblue"
+        >
+          <div class="flex flex-row items-center justify-start gap-[8px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame.svg"
+            />
+
+            <div class="relative">Home</div>
+          </div>
+          <div
+            class="flex flex-row items-center justify-start gap-[8px] text-gray"
+          >
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame1.svg"
+            />
+
+            <div class="relative">Find Jobs</div>
+          </div>
+          <div class="flex flex-row items-center justify-start gap-[8px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame2.svg"
+            />
+
+            <div class="relative">My Jobs</div>
+          </div>
+          <div class="flex flex-row items-center justify-start gap-[8px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame3.svg"
+            />
+
+            <div class="relative">Saved Jobs</div>
+          </div>
+          <div class="flex flex-row items-center justify-start gap-[8px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame4.svg"
+            />
+
+            <div class="relative">Messages</div>
+          </div>
+        </div>
+        <div
+          class="flex flex-row items-center justify-center gap-[12px] z-[2] text-white"
+        >
+          <img
+            class="relative rounded-31xl w-11 h-11"
+            alt=""
+            src="/public/frame-10.svg"
+          />
+
+          <img
+            class="relative rounded-[50%] w-11 h-11 object-cover"
+            alt=""
+            src="/public/ellipse-2@2x.png"
+          />
+
+          <div
+            class="self-stretch rounded-xl bg-dodgerblue overflow-hidden flex flex-row items-center justify-center py-2.5 px-6"
+          >
+            <div class="relative font-medium">Post a Job</div>
+          </div>
+        </div>
+        <!-- <div
+          class="absolute my-0 mx-[!important] bottom-[-0.41px] left-[473px] bg-dodgerblue w-[104px] h-1 z-[3]"
+        ></div> -->
+      </div>
+      <div
+        class="absolute top-[121px] left-[32px] rounded-xl bg-white w-[500px] h-[790px] overflow-hidden flex flex-col items-start justify-start p-8 box-border gap-[24px]"
+      >
+        <div
+          class="self-stretch flex flex-row items-center justify-between text-5xl"
+        >
+          <b class="relative">Filters</b>
+          <div
+            class="relative text-base [text-decoration:underline] font-medium text-dodgerblue"
+          >
+            Reset All
+          </div>
+        </div>
+        <div
+          class="self-stretch relative box-border h-px border-t-[1px] border-solid border-gainsboro"
+        ></div>
+        <div
+          class="self-stretch flex flex-col items-start justify-start gap-[20px]"
+        >
+          <b class="self-stretch relative">Sort By</b>
+          <div
+            class="self-stretch flex flex-row flex-wrap items-center justify-start gap-[24px] text-base"
+          >
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <img
+                class="relative rounded-21xl w-[19px] h-[19px] overflow-hidden shrink-0"
+                alt=""
+                src="/public/frame-14.svg"
+              />
+
+              <div class="relative">Most Recent</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded-21xl box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">A-Z</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded-21xl box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">Top Salary</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded-21xl box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">Trending</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="self-stretch relative box-border h-px border-t-[1px] border-solid border-gainsboro"
+        ></div>
+        <div
+          class="self-stretch flex flex-col items-start justify-start gap-[20px]"
+        >
+          <b class="self-stretch relative">Salary Range</b>
+          <div class="relative w-[265px] h-[45px] text-center text-base">
+            <div
+              class="absolute bottom-[33px] left-[9px] rounded-11xl bg-gainsboro w-64 h-1.5"
+            ></div>
+            <div
+              class="absolute bottom-[33px] left-[9px] rounded-11xl bg-dodgerblue w-[138px] h-1.5"
+            ></div>
+            <div class="absolute top-[24px] left-[0px]">$100</div>
+            <div class="absolute top-[24px] left-[128px]">$60k</div>
+            <div
+              class="absolute top-[0px] left-[0px] rounded-21xl bg-dodgerblue w-[19px] h-[19px] overflow-hidden"
+            ></div>
+            <div
+              class="absolute top-[0px] left-[138px] rounded-21xl bg-dodgerblue w-[19px] h-[19px] overflow-hidden"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="self-stretch relative box-border h-px border-t-[1px] border-solid border-gainsboro"
+        ></div>
+        <div
+          class="self-stretch flex flex-col items-start justify-start gap-[20px]"
+        >
+          <b class="self-stretch relative">Job Type</b>
+          <div
+            class="self-stretch flex flex-row flex-wrap items-center justify-start gap-[24px] text-base"
+          >
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <img
+                class="relative rounded w-[19px] h-[19px] overflow-hidden shrink-0"
+                alt=""
+                src="/public/frame-141.svg"
+              />
+
+              <div class="relative">Full-Time</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">Part-Time</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">Internship</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">Volunteer</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="self-stretch relative box-border h-px border-t-[1px] border-solid border-gainsboro"
+        ></div>
+        <div
+          class="self-stretch flex flex-col items-start justify-start gap-[20px]"
+        >
+          <b class="self-stretch relative">Experience</b>
+          <div
+            class="self-stretch flex flex-row flex-wrap items-center justify-start gap-[24px] text-base"
+          >
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">Fresh</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">Beginner</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">Intermediate</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <img
+                class="relative rounded w-[19px] h-[19px] overflow-hidden shrink-0"
+                alt=""
+                src="/public/frame-142.svg"
+              />
+
+              <div class="relative">Expert</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="self-stretch relative box-border h-px border-t-[1px] border-solid border-gainsboro"
+        ></div>
+        <div
+          class="self-stretch flex flex-col items-start justify-start gap-[20px]"
+        >
+          <b class="self-stretch relative">Position</b>
+          <div
+            class="self-stretch flex flex-row flex-wrap items-center justify-start gap-[24px] text-base"
+          >
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">On-Site</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <div
+                class="relative rounded box-border w-[19px] h-[19px] overflow-hidden shrink-0 border-[1px] border-solid border-lightsteelblue-100"
+              ></div>
+              <div class="relative">Hybrid</div>
+            </div>
+            <div class="flex flex-row items-center justify-start gap-[6px]">
+              <img
+                class="relative rounded w-[19px] h-[19px] overflow-hidden shrink-0"
+                alt=""
+                src="/public/frame-141.svg"
+              />
+
+              <div class="relative">Remote</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-[121px] left-[1400px] rounded-xl bg-white w-[329px] h-[790px] overflow-hidden flex flex-col items-start justify-start p-8 box-border gap-[24px] text-base"
+      >
+        <div
+          class="self-stretch flex flex-col items-start justify-start gap-[14px] text-5xl"
+        >
+          <div class="self-stretch flex flex-row items-start justify-between">
+            <div class="flex flex-col items-start justify-start gap-[16px]">
+              <div
+                class="relative rounded-xl bg-ghostwhite w-[81px] h-[81px] overflow-hidden shrink-0"
+              >
+                <img
+                  class="absolute top-[3px] left-[3px] w-[75px] h-[75px] object-cover"
+                  alt=""
+                  src="/public/image-3@2x.png"
+                />
+              </div>
+              <div class="flex flex-col items-start justify-start gap-[6px]">
+                <b class="relative">UI/UX Designer</b>
+                <div class="relative text-base text-steelblue">
+                  Netflix · New York, US
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-end justify-start">
+              <div class="flex flex-row items-start justify-center gap-[8px]">
+                <img
+                  class="relative w-6 h-6 overflow-hidden shrink-0"
+                  alt=""
+                  src="/public/frame5.svg"
+                />
+
+                <img
+                  class="relative w-6 h-6 overflow-hidden shrink-0"
+                  alt=""
+                  src="/public/frame6.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-31xl bg-royalblue-200 flex flex-row items-center justify-center py-2 px-3.5 text-sm text-royalblue-100"
+          >
+            <div class="relative">1000+ Applicants</div>
+          </div>
+        </div>
+        <div
+          class="self-stretch relative box-border h-px border-t-[1px] border-solid border-gainsboro"
+        ></div>
+        <div
+          class="self-stretch flex flex-row flex-wrap items-start justify-start gap-[32px]"
+        >
+          <div class="flex flex-col items-start justify-start gap-[6px]">
+            <b class="relative">Job Type</b>
+            <div class="relative leading-[22px] text-steelblue">Full-Time</div>
+          </div>
+          <div class="flex flex-col items-start justify-start gap-[6px]">
+            <b class="relative">Experience</b>
+            <div class="relative leading-[22px] text-steelblue">Expert</div>
+          </div>
+          <div class="flex flex-col items-start justify-start gap-[6px]">
+            <b class="relative">Position</b>
+            <div class="relative leading-[22px] text-steelblue">Remote</div>
+          </div>
+          <div class="flex flex-col items-start justify-start gap-[6px]">
+            <b class="relative">Date Posted</b>
+            <div class="relative leading-[22px] text-steelblue">
+              29 Sep, 2023
+            </div>
+          </div>
+        </div>
+        <div
+          class="self-stretch relative box-border h-px border-t-[1px] border-solid border-gainsboro"
+        ></div>
+        <div
+          class="self-stretch flex flex-col items-start justify-start gap-[10px] text-xl"
+        >
+          <b class="relative">Job Description</b>
+          <div
+            class="self-stretch relative text-base leading-[22px] text-steelblue"
+          >
+            <span
+              >We are seeking a talented and motivated UI/UX Designer to join
+              our team. Core responsibilities include user interaction design....</span
+            >
+            <span
+              class="[text-decoration:underline] font-medium text-dodgerblue"
+              >read more</span
+            >
+          </div>
+        </div>
+        <div
+          class="self-stretch relative box-border h-px border-t-[1px] border-solid border-gainsboro"
+        ></div>
+        <!-- <div
+          class="self-stretch flex flex-col items-start justify-start gap-[10px] text-xl"
+        >
+          <b class="relative">Base Salary</b>
+          <div
+            class="self-stretch relative text-base leading-[22px] text-steelblue"
+          >
+            10k/month
+          </div>
+        </div> -->
+        <div
+          class="self-stretch rounded-xl bg-dodgerblue h-11 overflow-hidden shrink-0 flex flex-row items-center justify-center py-2.5 px-6 box-border text-white"
+        >
+          <div class="relative font-medium">Apply Now</div>
+        </div>
+      </div>
+      <div
+        class="absolute top-[121px] left-[630px] flex flex-row items-start justify-start gap-[20px] text-base"
+      >
+        <div
+          class="rounded-xl bg-white w-[562px] overflow-hidden shrink-0 flex flex-row items-center justify-between py-4 px-5 box-border"
+        >
+          <div class="flex flex-row items-center justify-start gap-[12px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame7.svg"
+            />
+
+            <div class="relative">
+              <span>UI UX Designer</span>
+              <span class="text-dodgerblue">|</span>
+            </div>
+          </div>
+          <div
+            class="flex flex-row items-center justify-start gap-[12px] text-steelblue"
+          >
+            <div
+              class="self-stretch relative box-border w-px border-r-[1px] border-solid border-gainsboro"
+            ></div>
+            <div class="flex flex-row items-center justify-start gap-[8px]">
+              <img
+                class="relative w-6 h-6 overflow-hidden shrink-0"
+                alt=""
+                src="/public/frame8.svg"
+              />
+
+              <div class="relative">United States</div>
+            </div>
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame9.svg"
+            />
+          </div>
+        </div>
+        <div
+          class="rounded-xl bg-dodgerblue w-24 h-14 overflow-hidden shrink-0 flex flex-row items-center justify-center py-4 px-6 box-border text-white"
+        >
+          <div class="relative font-medium">Search</div>
+        </div>
+      </div>
+      <div
+        class="absolute top-[197px] left-[630px] flex flex-row items-center justify-start gap-[349px] text-5xl"
+      >
+        <b class="relative">Search Results</b>
+        <div class="relative text-base text-lightslategray text-right">
+          30,000 results found
+        </div>
+      </div>
+      <div
+        class="absolute top-[242px] left-[630px] rounded-xl bg-white box-border w-[329px] overflow-hidden flex flex-col items-start justify-end p-5 gap-[16px] border-[1px] border-solid border-dodgerblue"
+      >
+        <div class="self-stretch flex flex-row items-start justify-between">
+          <div class="flex flex-row items-center justify-start gap-[12px]">
+            <div
+              class="relative rounded-lg bg-ghostwhite w-[54px] h-[54px] overflow-hidden shrink-0"
+            >
+              <img
+                class="absolute top-[2px] left-[2px] w-[50px] h-[50px] object-cover"
+                alt=""
+                src="/public/image-31@2x.png"
+              />
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[2px]">
+              <b class="relative">UI/UX Designer</b>
+              <div class="relative text-base text-steelblue">Netflix</div>
+            </div>
+          </div>
+          <img
+            class="relative w-6 h-6 overflow-hidden shrink-0"
+            alt=""
+            src="/public/frame6.svg"
+          />
+        </div>
+        <div
+          class="flex flex-row flex-wrap items-end justify-start gap-[8px] text-sm"
+        >
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Full-Time</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Expert</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Remote</div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-between text-base"
+        >
+          <div class="flex flex-row items-center justify-start gap-[6px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame10.svg"
+            />
+
+            <div class="relative">$10k/month</div>
+          </div>
+          <div class="relative text-sm text-lightsteelblue-200">2 mins ago</div>
+        </div>
+      </div>
+      <div
+        class="absolute top-[446px] left-[630px] rounded-xl bg-white w-[329px] overflow-hidden flex flex-col items-start justify-end p-5 box-border gap-[16px]"
+      >
+        <div class="self-stretch flex flex-row items-start justify-between">
+          <div class="flex flex-row items-center justify-start gap-[12px]">
+            <div
+              class="relative rounded-lg bg-ghostwhite w-[54px] h-[54px] overflow-hidden shrink-0"
+            >
+              <img
+                class="absolute top-[15px] left-[6px] w-[42px] h-6 object-cover"
+                alt=""
+                src="/public/image-2@2x.png"
+              />
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[2px]">
+              <b class="relative">UI Designer</b>
+              <div class="relative text-base text-steelblue">Meta</div>
+            </div>
+          </div>
+          <img
+            class="relative w-6 h-6 overflow-hidden shrink-0"
+            alt=""
+            src="/public/frame6.svg"
+          />
+        </div>
+        <div
+          class="flex flex-row flex-wrap items-end justify-start gap-[8px] text-sm"
+        >
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Full-Time</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Expert</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Remote</div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-between text-base"
+        >
+          <div class="flex flex-row items-center justify-start gap-[6px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame10.svg"
+            />
+
+            <div class="relative">$12k/month</div>
+          </div>
+          <div class="relative text-sm text-lightsteelblue-200">
+            2 hours ago
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-[630px] left-[630px] rounded-xl bg-white w-[329px] overflow-hidden flex flex-col items-start justify-end p-5 mt-4 box-border gap-[16px]"
+      >
+        <div class="self-stretch flex flex-row items-start justify-between">
+          <div class="flex flex-row items-center justify-start gap-[12px]">
+            <div
+              class="relative rounded-lg bg-ghostwhite w-[54px] h-[54px] overflow-hidden shrink-0"
+            >
+              <img
+                class="absolute top-[10px] left-[0px] w-[79px] h-[34px] object-cover"
+                alt=""
+                src="/public/image-7@2x.png"
+              />
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[2px]">
+              <b class="relative">UI/UX Designer</b>
+              <div class="relative text-base text-steelblue">Microsoft</div>
+            </div>
+          </div>
+          <img
+            class="relative w-6 h-6 overflow-hidden shrink-0"
+            alt=""
+            src="/public/frame6.svg"
+          />
+        </div>
+        <div
+          class="flex flex-row flex-wrap items-end justify-start gap-[8px] text-sm"
+        >
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Full-Time</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Expert</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Remote</div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-between text-base"
+        >
+          <div class="flex flex-row items-center justify-start gap-[6px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame10.svg"
+            />
+
+            <div class="relative">$10k/month</div>
+          </div>
+          <div class="relative text-sm text-lightsteelblue-200">1 day ago</div>
+        </div>
+      </div>
+      <!-- <div
+        class="absolute top-[854px] left-[630px] rounded-xl bg-white w-[329px] overflow-hidden flex flex-col items-start justify-end p-5 box-border gap-[16px]"
+      >
+        <div class="self-stretch flex flex-row items-start justify-between">
+          <div class="flex flex-row items-center justify-start gap-[12px]">
+            <div
+              class="relative rounded-lg bg-ghostwhite w-[54px] h-[54px] overflow-hidden shrink-0"
+            >
+              <img
+                class="absolute top-[11px] left-[12px] w-[31px] h-8 object-cover"
+                alt=""
+                src="/public/image-4@2x.png"
+              />
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[2px]">
+              <b class="relative">UI Designer</b>
+              <div class="relative text-base text-steelblue">Google</div>
+            </div>
+          </div>
+          <img
+            class="relative w-6 h-6 overflow-hidden shrink-0"
+            alt=""
+            src="/public/frame6.svg"
+          />
+        </div>
+        <div
+          class="flex flex-row flex-wrap items-end justify-start gap-[8px] text-sm"
+        >
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Full-Time</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Expert</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Remote</div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-between text-base"
+        >
+          <div class="flex flex-row items-center justify-start gap-[6px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame10.svg"
+            />
+
+            <div class="relative">$12k/month</div>
+          </div>
+          <div class="relative text-sm text-lightsteelblue-200">2 days ago</div>
+        </div>
+      </div> -->
+      <div
+        class="absolute top-[242px] left-[1000px] rounded-xl bg-white w-[329px] overflow-hidden flex flex-col items-start justify-end p-5 box-border gap-[16px]"
+      >
+        <div class="self-stretch flex flex-row items-start justify-between">
+          <div class="flex flex-row items-center justify-start gap-[12px]">
+            <div
+              class="relative rounded-lg bg-ghostwhite w-[54px] h-[54px] overflow-hidden shrink-0"
+            >
+              <img
+                class="absolute top-[11px] left-[12px] w-[31px] h-8 object-cover"
+                alt=""
+                src="/public/image-4@2x.png"
+              />
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[2px]">
+              <b class="relative">UX Designer</b>
+              <div class="relative text-base text-steelblue">Google</div>
+            </div>
+          </div>
+          <img
+            class="relative w-6 h-6 overflow-hidden shrink-0"
+            alt=""
+            src="/public/frame6.svg"
+          />
+        </div>
+        <div
+          class="flex flex-row flex-wrap items-end justify-start gap-[8px] text-sm"
+        >
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Full-Time</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Expert</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Remote</div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-between text-base"
+        >
+          <div class="flex flex-row items-center justify-start gap-[6px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame10.svg"
+            />
+
+            <div class="relative">$32k/month</div>
+          </div>
+          <div class="relative text-sm text-lightsteelblue-200">
+            30 mins ago
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-[446px] left-[1000px] rounded-xl bg-white w-[329px] overflow-hidden flex flex-col items-start justify-end p-5 box-border gap-[16px]"
+      >
+        <div class="self-stretch flex flex-row items-start justify-between">
+          <div class="flex flex-row items-center justify-start gap-[12px]">
+            <div
+              class="relative rounded-lg bg-whitesmoke w-[54px] h-[54px] overflow-hidden shrink-0"
+            >
+              <img
+                class="absolute top-[12px] left-[0px] w-[55px] h-[30px] object-cover"
+                alt=""
+                src="/public/image-5@2x.png"
+              />
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[2px]">
+              <b class="relative">UX Designer</b>
+              <div class="relative text-base text-steelblue">X</div>
+            </div>
+          </div>
+          <img
+            class="relative w-6 h-6 overflow-hidden shrink-0"
+            alt=""
+            src="/public/frame6.svg"
+          />
+        </div>
+        <div
+          class="flex flex-row flex-wrap items-end justify-start gap-[8px] text-sm"
+        >
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Full-Time</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Expert</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Remote</div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-between text-base"
+        >
+          <div class="flex flex-row items-center justify-start gap-[6px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame10.svg"
+            />
+
+            <div class="relative">$24k/month</div>
+          </div>
+          <div class="relative text-sm text-lightsteelblue-200">
+            4 hours ago
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute top-[630px] left-[1000px] rounded-xl bg-white w-[329px] overflow-hidden flex flex-col items-start justify-end p-5 mt-4 box-border gap-[16px]"
+      >
+        <div class="self-stretch flex flex-row items-start justify-between">
+          <div class="flex flex-row items-center justify-start gap-[12px]">
+            <div
+              class="relative rounded-lg bg-ghostwhite w-[54px] h-[54px] overflow-hidden shrink-0"
+            >
+              <img
+                class="absolute top-[10px] left-[16px] w-[22px] h-[33px] object-cover"
+                alt=""
+                src="/public/image-8@2x.png"
+              />
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[2px]">
+              <b class="relative">UX Designer</b>
+              <div class="relative text-base text-steelblue">Figma</div>
+            </div>
+          </div>
+          <img
+            class="relative w-6 h-6 overflow-hidden shrink-0"
+            alt=""
+            src="/public/frame6.svg"
+          />
+        </div>
+        <div
+          class="flex flex-row flex-wrap items-end justify-start gap-[8px] text-sm"
+        >
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Full-Time</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Expert</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Remote</div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-between text-base"
+        >
+          <div class="flex flex-row items-center justify-start gap-[6px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame10.svg"
+            />
+
+            <div class="relative">$32k/month</div>
+          </div>
+          <div class="relative text-sm text-lightsteelblue-200">2 days ago</div>
+        </div>
+      </div>
+      <!-- <div
+        class="absolute top-[854px] left-[1000px] rounded-xl bg-white w-[329px] overflow-hidden flex flex-col items-start justify-end p-5 box-border gap-[16px]"
+      >
+        <div class="self-stretch flex flex-row items-start justify-between">
+          <div class="flex flex-row items-center justify-start gap-[12px]">
+            <div
+              class="relative rounded-lg bg-whitesmoke w-[54px] h-[54px] overflow-hidden shrink-0"
+            >
+              <img
+                class="absolute top-[15px] left-[6px] w-[42px] h-6 object-cover"
+                alt=""
+                src="/public/image-2@2x.png"
+              />
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[2px]">
+              <b class="relative">UX Designer</b>
+              <div class="relative text-base text-steelblue">Meta</div>
+            </div>
+          </div>
+          <img
+            class="relative w-6 h-6 overflow-hidden shrink-0"
+            alt=""
+            src="/public/frame6.svg"
+          />
+        </div>
+        <div
+          class="flex flex-row flex-wrap items-end justify-start gap-[8px] text-sm"
+        >
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Full-Time</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Expert</div>
+          </div>
+          <div
+            class="rounded-31xl bg-ghostwhite flex flex-row items-center justify-center py-2 px-3.5"
+          >
+            <div class="relative">Remote</div>
+          </div>
+        </div>
+        <div
+          class="self-stretch flex flex-row items-center justify-between text-base"
+        >
+          <div class="flex flex-row items-center justify-start gap-[6px]">
+            <img
+              class="relative w-6 h-6 overflow-hidden shrink-0"
+              alt=""
+              src="/public/frame10.svg"
+            />
+
+            <div class="relative">$16k/month</div>
+          </div>
+          <div class="relative text-sm text-lightsteelblue-200">1 week ago</div>
+        </div>
+      </div> -->
+
+    </div>
+  </body>
+</html>
